@@ -59,7 +59,9 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 WORKDIR /app
 EXPOSE 7860
 EXPOSE 5000
+EXPOSE 5001
 EXPOSE 5005
+
 # Required for Python print statements to appear in logs
 ENV PYTHONUNBUFFERED=1
 # Force variant layers to sync cache by setting --build-arg BUILD_DATE
